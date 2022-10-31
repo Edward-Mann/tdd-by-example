@@ -9,7 +9,7 @@ class FrancTest {
     @Test
     void times() {
         Money tenFrancs = Money.franc(10);
-        assertEquals(new Franc(30), tenFrancs.times(3));
+        assertEquals(new Money(30, "CHF"), tenFrancs.times(3));
     }
 
     @Test

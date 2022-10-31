@@ -10,7 +10,7 @@ class DollarTest {
     @Test
     void times() {
         Money fiveDollars = Money.dollar(5);
-        assertEquals(Money.dollar(10), fiveDollars.times(2));
+        assertEquals(new Money(10, "USD"), fiveDollars.times(2));
     }
 
     @Test
